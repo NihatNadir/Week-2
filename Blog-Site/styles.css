@@ -1,0 +1,67 @@
+/* General Styles: These styles apply to the entire page */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the entire document */
+    background-color: #f4f4f4; /* Light gray background for the page */
+    color: #333; /* Dark gray text for readability */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Header Styles: Styling for the top section of the page */
+header {
+    background-color: #333; /* Dark gray background for the header */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Centers the header content */
+    padding: 1rem 0; /* Adds spacing above and below the content */
+}
+
+header h1 {
+    margin: 0; /* Removes default margin around the header title */
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns list items in a horizontal row */
+    justify-content: center; /* Centers the navigation items */
+    gap: 1rem; /* Adds space between navigation links */
+}
+
+nav ul li a {
+    color: #fff; /* White text for navigation links */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem; /* Adds spacing around the main content */
+}
+
+/* Post Summary Cards: Styling for the summary cards on the homepage */
+.post-summary {
+    background-color: #fff; /* White background for the card */
+    border-radius: 8px; /* Rounds the corners of the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    padding: 1rem; /* Adds spacing inside the card */
+    margin: 1rem 0; /* Adds space between cards */
+}
+
+.post-summary h3 a {
+    color: #333; /* Dark gray text for post titles */
+    text-decoration: none; /* Removes underline from post titles */
+}
+
+.post-summary h3 a:hover {
+    text-decoration: underline; /* Underlines the title when hovered */
+}
+
+/* Footer Styles: Styling for the bottom section of the page */
+footer {
+    background-color: #333; /* Dark gray background for the footer */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Centers the footer content */
+    padding: 1rem 0; /* Adds spacing above and below the footer */
+    margin-top: 2rem; /* Adds space above the footer */
+}
