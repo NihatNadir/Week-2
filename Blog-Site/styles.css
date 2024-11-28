@@ -1,67 +1,95 @@
-/* General Styles: These styles apply to the entire page */
-body {
-    font-family: Arial, sans-serif; /* Sets the font for the entire document */
-    background-color: #f4f4f4; /* Light gray background for the page */
-    color: #333; /* Dark gray text for readability */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
 }
 
-/* Header Styles: Styling for the top section of the page */
-header {
-    background-color: #333; /* Dark gray background for the header */
-    color: #fff; /* White text for contrast */
-    text-align: center; /* Centers the header content */
-    padding: 1rem 0; /* Adds spacing above and below the content */
+:root{
+    --bg-color: #f4f4f4;
+    --second-bg-color: #333;
+    --text-color : #333;
+    --second-text-color : #666;
 }
 
-header h1 {
-    margin: 0; /* Removes default margin around the header title */
+body{
+    background-color: var(--bg-color);
 }
 
-/* Navigation Menu Styles */
-nav ul {
-    list-style: none; /* Removes bullet points from the list */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Aligns list items in a horizontal row */
-    justify-content: center; /* Centers the navigation items */
-    gap: 1rem; /* Adds space between navigation links */
+.header{ 
+    padding: 1rem; 
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;       
+    background-color: var(--second-bg-color);    
 }
 
-nav ul li a {
-    color: #fff; /* White text for navigation links */
-    text-decoration: none; /* Removes underline from links */
+a{
+    color: #f4f4f4;
 }
 
-/* Main Content Styles */
-main {
-    padding: 1rem; /* Adds spacing around the main content */
+h2{
+    color: var(--second-bg-color);
+    margin: 2rem 0 0 1rem;
 }
 
-/* Post Summary Cards: Styling for the summary cards on the homepage */
-.post-summary {
-    background-color: #fff; /* White background for the card */
-    border-radius: 8px; /* Rounds the corners of the card */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    padding: 1rem; /* Adds spacing inside the card */
-    margin: 1rem 0; /* Adds space between cards */
+section{
+    display: flex;
+    justify-content: center;
 }
 
-.post-summary h3 a {
-    color: #333; /* Dark gray text for post titles */
-    text-decoration: none; /* Removes underline from post titles */
+.post-summary{
+    width: calc(100% - 2rem);
+    margin: 2rem;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+h3{    
+    margin: 1rem;
+}
+p{
+    margin: 2rem 1.5rem;
+    text-align: left;
+    color: var(--second-bg-color);
 }
 
-.post-summary h3 a:hover {
-    text-decoration: underline; /* Underlines the title when hovered */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 9%;    
+    background-color: var(--second-bg-color);   
+}
+footer p{
+    text-align: center;
+    color: var(--bg-color);
 }
 
-/* Footer Styles: Styling for the bottom section of the page */
-footer {
-    background-color: #333; /* Dark gray background for the footer */
-    color: #fff; /* White text for contrast */
-    text-align: center; /* Centers the footer content */
-    padding: 1rem 0; /* Adds spacing above and below the footer */
-    margin-top: 2rem; /* Adds space above the footer */
+ul{
+    display: flex;
+    justify-content:center;    
+}
+li{
+    margin: 1rem;
+}
+h1{
+    color: var(--bg-color);
+}
+h3 a{
+    color: var(--second-bg-color);
+}
+img{    
+    height: 300px;
+    width: 250px;
 }
