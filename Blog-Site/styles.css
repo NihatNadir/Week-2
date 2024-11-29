@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,7 @@
 }
 
 body{
+    font-family: Arial, sans-serif;
     background-color: var(--bg-color);
 }
 
@@ -92,4 +93,19 @@ h3 a{
 img{    
     height: 300px;
     width: 250px;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .post-summary {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    img {
+        width: 90%;
+        height: auto;
+    }
 }
