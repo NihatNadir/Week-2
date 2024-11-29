@@ -1,5 +1,5 @@
+/* General settings: Reset for all elements and basic setup */
 *{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,18 +7,21 @@
     list-style: none;    
 }
 
+/* Theme colors defined as variables */
 :root{
-    --bg-color: #f4f4f4;
-    --second-bg-color: #333;
-    --text-color : #333;
-    --second-text-color : #666;
+    --bg-color: #f4f4f4; /* Background color */
+    --second-bg-color: #333; /* Secondary dark background color */
+    --text-color : #333; /* Primary text color */
+    --second-text-color : #666; /* Secondary text color */
 }
 
+/* Base styling for the entire page */
 body{
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
 }
 
+/* Styling for the header section */
 .header{ 
     padding: 1rem; 
     width: 100%;    
@@ -28,84 +31,108 @@ body{
     background-color: var(--second-bg-color);    
 }
 
+/* Links (anchor tags) styling */
 a{
-    color: #f4f4f4;
+    color: #f4f4f4; /* White link color */
 }
 
+/* Styling for H2 headings */
 h2{
-    color: var(--second-bg-color);
-    margin: 2rem 0 0 1rem;
+    color: var(--second-bg-color); /* Dark heading color */
+    margin: 2rem 0 0 1rem; /* Outer spacing */
 }
 
+/* Section containing blog post summaries */
 section{
-    display: flex;
-    justify-content: center;
+    display: flex; /* Flexible layout */
+    justify-content: center; /* Center-align elements */
 }
 
+/* Blog post cards styling */
 .post-summary{
-    width: calc(100% - 2rem);
-    margin: 2rem;
-    background-color: white;
+    width: calc(100% - 2rem); /* Card width */
+    margin: 2rem; /* Spacing between cards */
+    background-color: white; /* Card background color */
     justify-content: center;
     text-align: center;
-    padding: 1rem 2%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-}
-h3{    
-    margin: 1rem;
-}
-p{
-    margin: 2rem 1.5rem;
-    text-align: left;
-    color: var(--second-bg-color);
+    padding: 1rem 2%; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
 }
 
+/* Styling for H3 headings */
+h3{    
+    margin: 1rem; /* Outer spacing */
+}
+
+/* Styling for paragraphs */
+p{
+    margin: 2rem 1.5rem; /* Outer spacing */
+    text-align: left; /* Text aligned to the left */
+    color: var(--second-bg-color); /* Dark text color */
+}
+
+/* Styling for the footer section */
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;    
+    position: fixed; /* Footer is fixed at the bottom */
+    bottom: 0; /* Positioned at the bottom */
+    width: 100%; /* Full-width */
+    height: 100px; /* Height */
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px 9%;    
-    background-color: var(--second-bg-color);   
+    padding: 10px 9%; /* Inner padding */
+    background-color: var(--second-bg-color); /* Dark background color */
 }
+
+/* Styling for text inside the footer */
 footer p{
-    text-align: center;
-    color: var(--bg-color);
+    text-align: center; /* Text centered */
+    color: var(--bg-color); /* Light text color */
 }
 
+/* Styling for navigation list */
 ul{
-    display: flex;
-    justify-content:center;    
-}
-li{
-    margin: 1rem;
-}
-h1{
-    color: var(--bg-color);
-}
-h3 a{
-    color: var(--second-bg-color);
-}
-img{    
-    height: 300px;
-    width: 250px;
+    display: flex; /* Horizontal alignment for list items */
+    justify-content:center; /* Center alignment */
 }
 
+/* Styling for individual list items */
+li{
+    margin: 1rem; /* Outer spacing */
+}
+
+/* Styling for the main page title (H1) */
+h1{
+    color: var(--bg-color); /* Light text color */
+}
+
+/* Styling for blog post links */
+h3 a{
+    color: var(--second-bg-color); /* Dark link color */
+}
+
+/* Styling for images */
+img{    
+    height: 300px; /* Fixed image height */
+    width: 250px; /* Fixed image width */
+}
+
+/* Responsive design for screens smaller than 768px */
 @media (max-width: 768px) {
+    /* Blog posts stack vertically */
     section {
         flex-direction: column;
         align-items: center;
     }
+    /* Adjust card width and spacing for smaller screens */
     .post-summary {
         width: 90%;
         margin: 1rem 0;
     }
+    /* Make images responsive */
     img {
         width: 90%;
-        height: auto;
+        height: auto; /* Maintain aspect ratio */
     }
 }
