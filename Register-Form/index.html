@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1 id="title">Survey Form For <br> CSS Practice</h1>
+    <p id="description">Please fill out the form below to help us improve our services.</p>
+
+    <form id="survey-form">              
+      <div class="form-group user">
+        <label for="name">Full Name</label>
+        <input type="text" id="name-label" placeholder="Full Name">
+      </div>
+
+      <div class="form-group user">
+        <label for="email">Mail</label>
+        <input type="email" id="email-label" placeholder="Email" required>
+      </div>
+
+      <div class="form-group user">
+        <label for="age">Age</label>
+        <input type="number" id="number-label" placeholder="Age" required>
+      </div>
+
+      <div class="form-group gender">
+        <label for="dropdown"></label>
+        <select id="dropdown" required>
+          <option disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>          
+        </select>
+      </div>
+
+      <div class="form-group radio">  
+
+          <p>Where did you hear us?</p>
+
+          <label for="instagram"><input id="instagram" type="radio" name="source" value="instagram"> Instagram</label>            
+
+          <label for="linkedin"><input id="linkedin" type="radio" name="source" value="linkedin"> LinkedIn</label> 
+                  
+      </div>
+
+      <div class="form-group checkboxes">
+        <label for="service"><input id="service" type="checkbox" name="service" value="service" required> Terms Of Service</label>
+        
+        <label for="news"><input id="news" type="checkbox" name="news" value="news">  Subscribe For News</label>
+        
+      </div>
+
+      <div class="form-group textarea">
+        <textarea placeholder="Suggestions"></textarea>
+      </div>
+      <input id="submit" type="submit" value="Sign Up">
+    
+    </form>
+  </div>
+</body>
+</html>
