@@ -2,6 +2,9 @@
 
 This project is a **Survey Form** built to practice **HTML** and **CSS** skills, following specific requirements for a structured and user-friendly form design. Below are the implemented features:
 
+![image](https://github.com/user-attachments/assets/10314152-15e4-49f5-9c3d-ce965d930b1a)
+
+
 ---
 
 ## 1. **Page Title**
