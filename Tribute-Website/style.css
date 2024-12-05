@@ -1,0 +1,233 @@
+*{
+    font-family: "Outfit",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;    
+}
+:root{      
+    --home-bg-color: #434E57;
+    --bio-bg-color:#9E7B7F;
+    --book-bg-color:#7B8B91;
+    --text-color: #100100;
+    --second-text-color: #fff;
+    --nav-color: #000315;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+/* Home */
+
+.header{    
+    margin-left: 15% ;
+    height: 20%;
+    display: flex;
+    align-items: baseline;
+    justify-content: end;  
+    background-color: var(--home-bg-color);  
+    z-index: 100;
+}
+
+#home{
+       
+    background-color: var(--second-text-color);
+}
+
+#home blockquote{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #AFAFAF;
+    color: var(--second-text-color);
+    height: 40%;
+    padding: 9% 2rem;
+    margin-left: 35%;
+}
+
+#home h1{       
+    font-size: 2.5rem;
+    color: var(--book-bg-color);
+    background-color: var(--home-bg-color);
+}
+
+h1 {   
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 2rem;
+    height: 40%;
+    margin-left: 15% ;   
+    z-index: 1; 
+ }
+
+#home p{
+    text-align: right;
+}
+
+#home img {
+    position: absolute;
+    top: 0;
+    left: -15%;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;   
+    gap: 1rem;
+    padding: 10px 40px 0 40px ; 
+    border-bottom: var(--nav-color) 2px solid; 
+}
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);       
+}
+
+/* About */
+
+#about{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bio-bg-color);
+    color: var(--second-text-color);
+}
+
+#about .content{
+    border: 1px solid var(--second-text-color);
+}
+
+#about div{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;   
+    padding: 1rem 8rem; 
+}
+
+div img{     
+    padding: 1rem;     
+    max-height: 400px;
+}
+
+
+/* Books */
+
+#books
+{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 6% 4rem;
+    background-color: var(--book-bg-color);
+    color: var(--second-text-color);
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    color: var(--book-bg-color);
+    background-color: var(--home-bg-color);   
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .navbar a {
+        font-size: 1.2rem;
+    }
+    #about div {
+        padding: 1rem 4rem;
+        font-size: 1.3rem;
+    }
+    #books {
+        font-size: 1.2rem;
+        padding: 6% 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        margin-left: 10%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+    #about div {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    #books {
+        font-size: 1rem;
+        padding: 5% 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-left: 5%;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .navbar a {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+    #about div {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    #books {
+        font-size: 0.8rem;
+        padding: 6% 2.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }  
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    .navbar a {
+        font-size: 0.9rem;
+    }
+    #about div {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    #books {
+        font-size: 0.9rem;
+        padding: 4% 1rem;
+    }
+    #home blockquote {
+        font-size: 1.5rem;
+    }
+}
+
+
+
